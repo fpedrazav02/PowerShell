@@ -1,0 +1,24 @@
+﻿<Window x:Class="csv_splitter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:csv_splitter"
+        mc:Ignorable="d"
+        Title="CSV_SPLITTER" Height="450" Width="800">
+    <Grid>
+        <Label Content="Input&#xD;&#xA;" HorizontalAlignment="Left" Margin="47,31,0,0" VerticalAlignment="Top" Height="27"/>
+        <Button x:Name="fi_btn" Content="Pick File" HorizontalAlignment="Left" Margin="45,58,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="fi_txtb" HorizontalAlignment="Left" Margin="105,60,0,0" Text="" VerticalAlignment="Top" Width="648" MaxLines="1" IsReadOnly="True"/>
+        <Label Content="Delimiter :" HorizontalAlignment="Left" Margin="49,95,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="delimiter_txtB" HorizontalAlignment="Left" Margin="113,95,0,0" TextWrapping="Wrap" Text="," VerticalAlignment="Top" Width="25" Height="26" MaxLength="1" MaxLines="1" HorizontalContentAlignment="Center"/>
+        <Label Content="Output" HorizontalAlignment="Left" Margin="49,156,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="fo_btn" Content="Pick Folder" HorizontalAlignment="Left" Margin="49,187,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.013,0.002"/>
+        <TextBox x:Name="fo_txtB" HorizontalAlignment="Left" Margin="126,188,0,0" Text="" VerticalAlignment="Top" Width="627" MaxLines="1" IsReadOnly="True"/>
+        <Label Content="# of files" HorizontalAlignment="Left" Margin="49,246,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="nfiles_txtB" HorizontalAlignment="Left" Margin="63,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="28" MaxLength="4" MaxLines="1"/>
+        <Button x:Name="split_btn" Content="Split" HorizontalAlignment="Left" Margin="126,252,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="listB" Margin="171,217,136,20"/>
+
+    </Grid>
+</Window>
